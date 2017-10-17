@@ -1,0 +1,10 @@
+E:\prog\cs\Новая папка\QR\QR\bin\Debug\QR.exe.config
+E:\prog\cs\Новая папка\QR\QR\bin\Debug\QR.exe
+E:\prog\cs\Новая папка\QR\QR\bin\Debug\QR.pdb
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.Form1.resources
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.Properties.Resources.resources
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.csproj.GenerateResource.Cache
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.csproj.CoreCompileInputs.cache
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.exe
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.pdb
+E:\prog\cs\Новая папка\QR\QR\obj\Debug\QR.csprojResolveAssemblyReference.cache

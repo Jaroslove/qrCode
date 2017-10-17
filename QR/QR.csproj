@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ED8144C-F78C-4331-8609-B7A0DFB0457D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QR</RootNamespace>
+    <AssemblyName>QR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec\QRCodeEncoder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Data\QRCodeBitmapImage.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Data\QRCodeImage.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Data\QRCodeSymbol.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Ecc\BCH15_5.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Ecc\ReedSolomon.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Reader.Pattern\AlignmentPattern.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Reader.Pattern\FinderPattern.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Reader.Pattern\LogicalSeed.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Reader\QRCodeDataBlockReader.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec.Reader\QRCodeImageReader.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Codec\QRCodeDecoder.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Crypt\BCH_15_5.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Crypt\Galois.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Crypt\RsDecode.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Crypt\RsEncode.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\AlignmentPatternNotFoundException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\DecodingFailedException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\FinderPatternNotFoundException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\InvalidDataBlockException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\InvalidVersionException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\InvalidVersionInfoException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\SymbolNotFoundException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.ExceptionHandler\VersionInformationException.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Geom\Axis.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Geom\Line.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Geom\Point.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Geom\SamplingGrid.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\Color.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\Color_Fields.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\ConsoleCanvas.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\ContentConverter.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\DebugCanvas.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\DebugCanvasAdapter.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\QRCodeHelper.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\StringHelper.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Helper\SystemUtils.cs" />
+    <Compile Include="QR_Code\MessagingToolkit.QRCode.Properties\Resources.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
